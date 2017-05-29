@@ -98,7 +98,7 @@ class PdoGsb{
 		return $laLigne['nb'];
 	}
 	public function getRembousementById($id){
-		$req = "select * from  fichefrais where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
+		$req = "select * from remboursement where idVisiteur ='$id'";
 		$res = PdoGsb::$monPdo->query($req);
 		$lesLignes = $res->fetchAll();
 		return $lesLignes;
