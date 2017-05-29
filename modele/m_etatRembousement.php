@@ -13,7 +13,7 @@ function getTable($indice, $annee){
 				$toReturn=$toReturn.'Numéro';
 			$toReturn=$toReturn.'</th>';
 			$toReturn=$toReturn.'<th>';
-				$toReturn=$toReturn.'mois ' ;
+				$toReturn=$toReturn.'Date ' ;
 			$toReturn=$toReturn.'</th>';
 			$toReturn=$toReturn.'<th>';
 				$toReturn=$toReturn.'Somme '.$etat[$indice];
