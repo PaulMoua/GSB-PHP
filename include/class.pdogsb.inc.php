@@ -286,7 +286,7 @@ class PdoGsb{
 		$req = "select fichefrais.idEtat as idEtat, fichefrais.dateModif as dateModif, fichefrais.nbJustificatifs as nbJustificatifs,
 			fichefrais.montantValide as montantValide, etat.libelle as libEtat from  fichefrais inner join etat on fichefrais.idEtat = etat.id
 			where fichefrais.idvisiteur ='$idVisiteur' and fichefrais.mois = '$mois'";
-		var_dump($req);
+		//var_dump($req);
 		$res = PdoGsb::$monPdo->query($req);
 		$laLigne = $res->fetch();
 		return $laLigne;
